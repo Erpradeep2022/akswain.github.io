@@ -7,126 +7,6 @@
   <meta name="description" content="Faculty homepage of Dr. Ayas Kanta Swain, Assistant Professor Grade-I, Department of Electronics and Communication Engineering, NIT Rourkela." />
   <meta name="theme-color" content="#0b3d91" />
   <link rel="stylesheet" href="style.css" />
-  <style>
-    /* Additional styles for photo section */
-    .profile-section {
-      display: grid;
-      grid-template-columns: 220px 1fr;
-      gap: 24px;
-      align-items: start;
-      margin-bottom: 24px;
-    }
-    
-    .profile-photo {
-      width: 220px;
-      height: 280px;
-      border-radius: 16px;
-      overflow: hidden;
-      border: 1px solid var(--line);
-      box-shadow: var(--shadow);
-      background: linear-gradient(135deg, rgba(99,179,255,.15), rgba(139,92,246,.1));
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    
-    .profile-photo img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 16px;
-    }
-    
-    .profile-photo-placeholder {
-      width: 100%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      color: var(--muted);
-      padding: 20px;
-      text-align: center;
-      font-size: 14px;
-    }
-    
-    .profile-photo-placeholder svg {
-      width: 60px;
-      height: 60px;
-      margin-bottom: 12px;
-      opacity: 0.5;
-    }
-    
-    .profile-info {
-      flex: 1;
-    }
-    
-    .profile-title {
-      font-size: 28px;
-      margin: 0 0 8px 0;
-      color: var(--text);
-    }
-    
-    .profile-subtitle {
-      color: var(--muted);
-      margin: 0 0 16px 0;
-      line-height: 1.5;
-    }
-    
-    .profile-quick-info {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 12px;
-      margin-top: 16px;
-    }
-    
-    .info-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 10px;
-      padding: 10px;
-      background: rgba(255,255,255,.03);
-      border-radius: 10px;
-      border: 1px solid var(--line);
-    }
-    
-    .info-item svg {
-      width: 18px;
-      height: 18px;
-      color: var(--brand);
-      flex-shrink: 0;
-      margin-top: 2px;
-    }
-    
-    .info-text {
-      font-size: 14px;
-      line-height: 1.5;
-    }
-    
-    .info-text strong {
-      display: block;
-      color: var(--text);
-      font-size: 13px;
-      margin-bottom: 2px;
-    }
-    
-    @media (max-width: 768px) {
-      .profile-section {
-        grid-template-columns: 1fr;
-        text-align: center;
-      }
-      
-      .profile-photo {
-        width: 200px;
-        height: 250px;
-        margin: 0 auto;
-      }
-      
-      .profile-quick-info {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
 </head>
 
 <body>
@@ -161,14 +41,14 @@
         <div class="profile-section">
           <!-- Photo Container -->
           <div class="profile-photo">
-            <!-- Replace with your actual photo -->
-            <img src="your-photo.jpg" alt="Dr. Ayas Kanta Swain" />
+            <!-- REPLACE THIS WITH YOUR PHOTO -->
+            <!-- <img src="photo.jpg" alt="Dr. Ayas Kanta Swain" /> -->
             <div class="profile-photo-placeholder">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
               </svg>
-              <span>Upload your photo (220×280px)</span>
-              <small style="margin-top: 8px; font-size: 12px;">Replace with your photo</small>
+              <span>Upload your photo</span>
+              <small style="margin-top: 4px; font-size: 12px;">220×280px recommended</small>
             </div>
           </div>
           
@@ -255,6 +135,7 @@
                 <li><a href="students.html">👨‍🎓 Research Supervision</a></li>
                 <li><a href="publications.html">📖 Publications</a></li>
                 <li><a href="activities.html">🎯 Workshops & Conferences</a></li>
+                <li><a href="contact.html">📞 Contact Information</a></li>
               </ul>
             </div>
           </div>
@@ -268,6 +149,7 @@
                 <li><b>2024:</b> 7 Ph.D. students currently supervised</li>
                 <li><b>2024:</b> Multiple publications in IEEE conferences</li>
                 <li><b>2023:</b> Completed Ph.D. from NIT Rourkela</li>
+                <li><b>2019‑present:</b> Active IEEE member and conference organizer</li>
               </ul>
             </div>
           </div>
@@ -281,6 +163,11 @@
             short research statement to <a href="mailto:swaina@nitrkl.ac.in">swaina@nitrkl.ac.in</a>
           </div>
         </div>
+
+        <p class="muted" style="margin-top:14px; font-size: 13px;">
+          Base profile information derived from the official NIT Rourkela faculty page. 
+          <a href="https://www.nitrkl.ac.in/EC/~swaina/" target="_blank">[Source]</a>
+        </p>
       </div>
     </section>
 
@@ -291,27 +178,5 @@
   </main>
 
   <script src="script.js"></script>
-  <script>
-    // Instructions for adding your photo
-    document.addEventListener('DOMContentLoaded', function() {
-      const photoPlaceholder = document.querySelector('.profile-photo-placeholder');
-      if (photoPlaceholder) {
-        photoPlaceholder.innerHTML = `
-          <div style="text-align: center; padding: 20px;">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width: 60px; height: 60px; margin-bottom: 12px; opacity: 0.5;">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
-            </svg>
-            <div style="color: var(--muted); font-size: 14px; line-height: 1.4;">
-              <strong>To add your photo:</strong><br/>
-              1. Save your photo as "photo.jpg"<br/>
-              2. Place it in the same folder<br/>
-              3. Replace this div with:<br/>
-              <code style="font-size: 11px; background: rgba(255,255,255,.05); padding: 2px 4px; border-radius: 4px; margin-top: 4px; display: inline-block;">&lt;img src="photo.jpg" alt="Dr. Ayas Kanta Swain" /&gt;</code>
-            </div>
-          </div>
-        `;
-      }
-    });
-  </script>
 </body>
 </html>
