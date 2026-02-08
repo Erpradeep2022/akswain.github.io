@@ -6,71 +6,6 @@
   <title>About - Dr. Ayas Kanta Swain | NIT Rourkela</title>
   <meta name="description" content="About Dr. Ayas Kanta Swain, Assistant Professor at NIT Rourkela" />
   <link rel="stylesheet" href="style.css" />
-  <style>
-    .about-container {
-      display: grid;
-      grid-template-columns: 200px 1fr;
-      gap: 30px;
-      align-items: start;
-    }
-    
-    .about-photo {
-      width: 200px;
-      height: 250px;
-      border-radius: 14px;
-      overflow: hidden;
-      border: 1px solid var(--line);
-      box-shadow: var(--shadow);
-      background: linear-gradient(135deg, rgba(99,179,255,.15), rgba(139,92,246,.1));
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    
-    .about-photo img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 14px;
-    }
-    
-    .about-photo-placeholder {
-      width: 100%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      color: var(--muted);
-      padding: 15px;
-      text-align: center;
-      font-size: 13px;
-    }
-    
-    .about-photo-placeholder svg {
-      width: 50px;
-      height: 50px;
-      margin-bottom: 10px;
-      opacity: 0.5;
-    }
-    
-    .about-details {
-      flex: 1;
-    }
-    
-    @media (max-width: 768px) {
-      .about-container {
-        grid-template-columns: 1fr;
-        text-align: center;
-      }
-      
-      .about-photo {
-        width: 180px;
-        height: 225px;
-        margin: 0 auto 20px;
-      }
-    }
-  </style>
 </head>
 
 <body>
@@ -107,26 +42,39 @@
 
       <div class="pad">
         <div class="about-container">
-          <!-- Photo Container -->
-          <div class="about-photo">
-            <!-- Replace with your actual photo -->
-            <!-- <img src="photo.jpg" alt="Dr. Ayas Kanta Swain" /> -->
-            <img src="photo1.jpg" alt="Dr. Ayas Kanta Swain" />
+          <!-- Photo Container - FLEXIBLE FOR ANY SIZE -->
+          <div class="about-photo-container">
+            <!-- 
+              REPLACE THIS WITH YOUR PHOTO - ANY SIZE WILL WORK!
+              Use the same photo as index.html or a different one
+            -->
+            <div class="photo-placeholder">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
               </svg>
               <span>Your Photo</span>
+              <div style="margin-top: 10px; font-size: 12px; color: rgba(255,255,255,.6);">
+                Add any size photo<br/>
+                Works with all formats
+              </div>
             </div>
           </div>
           
           <!-- Details -->
           <div class="about-details">
+            <h2 style="margin-top: 0;">Dr. Ayas Kanta Swain</h2>
+            <p class="muted" style="margin-bottom: 16px;">
+              Assistant Professor Grade‑I<br/>
+              Department of Electronics and Communication Engineering<br/>
+              National Institute of Technology Rourkela
+            </p>
+            
             <div class="kvs">
               <b>Full Name</b><div>Dr. Ayas Kanta Swain</div>
               <b>Designation</b><div>Assistant Professor Grade‑I</div>
               <b>Department</b><div>Electronics and Communication Engineering</div>
               <b>Institute</b><div>National Institute of Technology Rourkela</div>
-              <b>Office</b><div>Room EC‑112</div>
+              <b>Office</b><div>Room EC‑112, ECE Department</div>
               <b>Email</b><div><a href="mailto:swaina@nitrkl.ac.in">swaina@nitrkl.ac.in</a></div>
               <b>Phone</b><div>0661‑246‑2458</div>
               <b>Official Page</b><div><a href="https://www.nitrkl.ac.in/EC/~swaina/" target="_blank">NITR Faculty Profile</a></div>
@@ -151,6 +99,7 @@
           <li>Extensive experience in VLSI design, embedded systems, and hardware security</li>
           <li>Active researcher with multiple sponsored projects</li>
           <li>Supervisor for Ph.D. and M.Tech students</li>
+          <li>Coordinator for workshops, short-term courses, and conferences</li>
         </ul>
 
         <div class="divider"></div>
@@ -167,16 +116,39 @@
           <span class="pill good">Image Encryption</span>
           <span class="pill good">Trusted Platform</span>
           <span class="pill good">System on Chip</span>
+          <span class="pill good">Network on Chip</span>
+          <span class="pill good">Functional Safety</span>
         </div>
 
-        <p class="muted" style="margin-top:20px">
+        <div class="divider"></div>
+
+        <h2>Professional Memberships</h2>
+        <ul class="list">
+          <li><b>IEEE Member</b> (2011‑Present)</li>
+          <li>Active participation in IEEE conferences and workshops</li>
+          <li>Reviewer for IEEE journals and conferences</li>
+        </ul>
+
+        <div class="callout" style="margin-top: 20px;">
+          <b>Quick Contact</b>
+          <div class="muted" style="line-height:1.7">
+            For research collaboration, student supervision, or other inquiries:<br/>
+            <b>Email:</b> <a href="mailto:swaina@nitrkl.ac.in">swaina@nitrkl.ac.in</a> · 
+            <b>Phone:</b> 0661‑246‑2458 · 
+            <b>Office:</b> EC‑112, ECE Department
+          </div>
+        </div>
+
+        <p class="muted" style="margin-top:20px; font-size: 13px;">
           Details align with the NITR faculty page. <a href="https://www.nitrkl.ac.in/EC/~swaina/" target="_blank">[Source]</a>
         </p>
       </div>
     </div>
 
     <p class="footer">
-      © <span id="y"></span> Dr. Ayas Kanta Swain · <a href="index.html">Home</a>
+      © <span id="y"></span> Dr. Ayas Kanta Swain · <a href="index.html">Home</a> · 
+      <a href="research.html">Research</a> · <a href="publications.html">Publications</a> · 
+      <a href="contact.html">Contact</a>
     </p>
   </main>
 
