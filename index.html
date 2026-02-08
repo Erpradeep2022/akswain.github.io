@@ -7,6 +7,126 @@
   <meta name="description" content="Faculty homepage of Dr. Ayas Kanta Swain, Assistant Professor Grade-I, Department of Electronics and Communication Engineering, NIT Rourkela." />
   <meta name="theme-color" content="#0b3d91" />
   <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Additional styles for photo section */
+    .profile-section {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 24px;
+      align-items: start;
+      margin-bottom: 24px;
+    }
+    
+    .profile-photo {
+      width: 220px;
+      height: 280px;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+      background: linear-gradient(135deg, rgba(99,179,255,.15), rgba(139,92,246,.1));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .profile-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 16px;
+    }
+    
+    .profile-photo-placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+    }
+    
+    .profile-photo-placeholder svg {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 12px;
+      opacity: 0.5;
+    }
+    
+    .profile-info {
+      flex: 1;
+    }
+    
+    .profile-title {
+      font-size: 28px;
+      margin: 0 0 8px 0;
+      color: var(--text);
+    }
+    
+    .profile-subtitle {
+      color: var(--muted);
+      margin: 0 0 16px 0;
+      line-height: 1.5;
+    }
+    
+    .profile-quick-info {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+      margin-top: 16px;
+    }
+    
+    .info-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 10px;
+      background: rgba(255,255,255,.03);
+      border-radius: 10px;
+      border: 1px solid var(--line);
+    }
+    
+    .info-item svg {
+      width: 18px;
+      height: 18px;
+      color: var(--brand);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    
+    .info-text {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    
+    .info-text strong {
+      display: block;
+      color: var(--text);
+      font-size: 13px;
+      margin-bottom: 2px;
+    }
+    
+    @media (max-width: 768px) {
+      .profile-section {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      
+      .profile-photo {
+        width: 200px;
+        height: 250px;
+        margin: 0 auto;
+      }
+      
+      .profile-quick-info {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -35,31 +155,85 @@
   </header>
 
   <main class="wrap">
-    <!-- HERO -->
+    <!-- PROFILE SECTION WITH PHOTO -->
     <section class="card">
-      <div class="headline">
-        <h1>Dr. Ayas Kanta Swain</h1>
-        <p>
-          Assistant Professor Grade‑I, Department of Electronics and Communication Engineering,
-          National Institute of Technology Rourkela
-          <span class="tag"><a href="https://www.nitrkl.ac.in/EC/~swaina/" target="_blank" rel="noreferrer">Official NITR Page</a></span>
-        </p>
-
-        <div class="pillrow">
-          <span class="pill good">VLSI Design</span>
-          <span class="pill good">Secure Embedded Systems</span>
-          <span class="pill good">Industrial IoT</span>
-          <span class="pill good">Hardware Security</span>
-          <span class="pill good">Cryptography</span>
-          <span class="pill good">Lightweight Cryptography</span>
-          <span class="pill good">Image Encryption</span>
-          <span class="pill mono">Email: swaina@nitrkl.ac.in</span>
-          <span class="pill mono">Phone: 0661‑246‑2458</span>
-          <span class="pill mono">Office: EC‑112</span>
-        </div>
-      </div>
-
       <div class="pad">
+        <div class="profile-section">
+          <!-- Photo Container -->
+          <div class="profile-photo">
+            <!-- Replace with your actual photo -->
+            <!-- <img src="your-photo.jpg" alt="Dr. Ayas Kanta Swain" /> -->
+            <div class="profile-photo-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+              </svg>
+              <span>Upload your photo (220×280px)</span>
+              <small style="margin-top: 8px; font-size: 12px;">Replace with your photo</small>
+            </div>
+          </div>
+          
+          <!-- Profile Information -->
+          <div class="profile-info">
+            <h1 class="profile-title">Dr. Ayas Kanta Swain</h1>
+            <p class="profile-subtitle">
+              Assistant Professor Grade‑I<br/>
+              Department of Electronics and Communication Engineering<br/>
+              National Institute of Technology Rourkela
+            </p>
+            
+            <div class="pillrow">
+              <span class="pill good">VLSI Design</span>
+              <span class="pill good">Secure Embedded Systems</span>
+              <span class="pill good">Industrial IoT</span>
+              <span class="pill good">Hardware Security</span>
+              <span class="pill mono">Email: swaina@nitrkl.ac.in</span>
+            </div>
+            
+            <div class="profile-quick-info">
+              <div class="info-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                </svg>
+                <div class="info-text">
+                  <strong>Email</strong>
+                  <a href="mailto:swaina@nitrkl.ac.in">swaina@nitrkl.ac.in</a>
+                </div>
+              </div>
+              
+              <div class="info-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                </svg>
+                <div class="info-text">
+                  <strong>Phone</strong>
+                  0661‑246‑2458
+                </div>
+              </div>
+              
+              <div class="info-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                </svg>
+                <div class="info-text">
+                  <strong>Office</strong>
+                  Room EC‑112, ECE Department
+                </div>
+              </div>
+              
+              <div class="info-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
+                </svg>
+                <div class="info-text">
+                  <strong>Official Page</strong>
+                  <a href="https://www.nitrkl.ac.in/EC/~swaina/" target="_blank">NITR Faculty Profile</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
         <div class="callout">
           <b>Welcome to My Academic Profile</b>
           <div class="muted" style="line-height:1.7">
@@ -107,11 +281,6 @@
             short research statement to <a href="mailto:swaina@nitrkl.ac.in">swaina@nitrkl.ac.in</a>
           </div>
         </div>
-
-        <p class="muted" style="margin-top:14px">
-          Base profile information derived from the official NIT Rourkela faculty page. 
-          <a href="https://www.nitrkl.ac.in/EC/~swaina/" target="_blank">[Source]</a>
-        </p>
       </div>
     </section>
 
@@ -122,5 +291,27 @@
   </main>
 
   <script src="script.js"></script>
+  <script>
+    // Instructions for adding your photo
+    document.addEventListener('DOMContentLoaded', function() {
+      const photoPlaceholder = document.querySelector('.profile-photo-placeholder');
+      if (photoPlaceholder) {
+        photoPlaceholder.innerHTML = `
+          <div style="text-align: center; padding: 20px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width: 60px; height: 60px; margin-bottom: 12px; opacity: 0.5;">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+            </svg>
+            <div style="color: var(--muted); font-size: 14px; line-height: 1.4;">
+              <strong>To add your photo:</strong><br/>
+              1. Save your photo as "photo.jpg"<br/>
+              2. Place it in the same folder<br/>
+              3. Replace this div with:<br/>
+              <code style="font-size: 11px; background: rgba(255,255,255,.05); padding: 2px 4px; border-radius: 4px; margin-top: 4px; display: inline-block;">&lt;img src="photo.jpg" alt="Dr. Ayas Kanta Swain" /&gt;</code>
+            </div>
+          </div>
+        `;
+      }
+    });
+  </script>
 </body>
 </html>
