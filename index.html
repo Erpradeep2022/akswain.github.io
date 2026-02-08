@@ -3,242 +3,33 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ayas Kanta Swain | Assistant Professor | NIT Rourkela</title>
-  <meta name="description" content="Faculty homepage of Ayas Kanta Swain, Assistant Professor Grade-I, Department of Electronics and Communication Engineering, NIT Rourkela." />
+  <title>Dr. Ayas Kanta Swain | Assistant Professor | NIT Rourkela</title>
+  <meta name="description" content="Faculty homepage of Dr. Ayas Kanta Swain, Assistant Professor Grade-I, Department of Electronics and Communication Engineering, NIT Rourkela." />
   <meta name="theme-color" content="#0b3d91" />
-
-  <style>
-    :root{
-      --bg: #0b1220;
-      --card: rgba(255,255,255,.06);
-      --card2: rgba(255,255,255,.09);
-      --text: rgba(255,255,255,.92);
-      --muted: rgba(255,255,255,.68);
-      --line: rgba(255,255,255,.12);
-      --brand: #63b3ff;
-      --brand2:#8b5cf6;
-      --good:#22c55e;
-      --warn:#f59e0b;
-      --shadow: 0 12px 40px rgba(0,0,0,.45);
-      --radius: 18px;
-      --max: 1120px;
-      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-      --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
-    }
-    *{ box-sizing:border-box; }
-    html{ scroll-behavior:smooth; }
-    body{
-      margin:0;
-      font-family: var(--sans);
-      color: var(--text);
-      background:
-        radial-gradient(1000px 600px at 10% 0%, rgba(99,179,255,.18), transparent 60%),
-        radial-gradient(900px 600px at 90% 20%, rgba(139,92,246,.18), transparent 55%),
-        radial-gradient(900px 700px at 50% 100%, rgba(34,197,94,.10), transparent 60%),
-        var(--bg);
-    }
-    a{ color: var(--brand); text-decoration:none; }
-    a:hover{ text-decoration:underline; }
-
-    /* sticky nav */
-    .nav{
-      position: sticky;
-      top:0;
-      z-index: 50;
-      backdrop-filter: blur(12px);
-      background: rgba(11,18,32,.62);
-      border-bottom: 1px solid var(--line);
-    }
-    .nav-inner{
-      max-width: var(--max);
-      margin: 0 auto;
-      padding: 12px 16px;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap: 14px;
-    }
-    .brand{
-      display:flex; align-items:center; gap:10px;
-      min-width: 240px;
-    }
-    .mark{
-      width: 36px; height: 36px; border-radius: 12px;
-      background: linear-gradient(135deg, rgba(99,179,255,.95), rgba(139,92,246,.95));
-      box-shadow: 0 10px 30px rgba(99,179,255,.25);
-      flex: 0 0 auto;
-    }
-    .brand b{ display:block; line-height:1.1; }
-    .brand small{ color:var(--muted); display:block; margin-top:2px; }
-
-    .menu{
-      display:flex; flex-wrap:wrap; gap: 8px;
-      justify-content:flex-end;
-    }
-    .menu a{
-      color: var(--muted);
-      padding: 8px 10px;
-      border-radius: 10px;
-      border: 1px solid transparent;
-      text-decoration:none;
-      white-space:nowrap;
-    }
-    .menu a:hover{
-      color: var(--text);
-      border-color: var(--line);
-      background: rgba(255,255,255,.04);
-    }
-    .menu a.btn{
-      display:inline-flex; align-items:center; gap:8px;
-      padding: 9px 12px;
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      background: rgba(255,255,255,.04);
-      color: var(--text);
-    }
-    .menu a.btn:hover{ background: rgba(255,255,255,.07); }
-
-    /* layout */
-    .wrap{ max-width: var(--max); margin: 0 auto; padding: 22px 16px 72px; }
-    .grid{
-      display:grid;
-      grid-template-columns: 1.15fr .85fr;
-      gap: 18px;
-      margin-top: 18px;
-    }
-    @media (max-width: 980px){
-      .grid{ grid-template-columns: 1fr; }
-      .brand{ min-width: unset; }
-    }
-
-    .card{
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      overflow:hidden;
-    }
-    .pad{ padding: 18px; }
-    .headline{
-      padding: 22px 18px;
-      border-bottom: 1px solid var(--line);
-      background: linear-gradient(135deg, rgba(99,179,255,.10), rgba(139,92,246,.08));
-    }
-    .headline h1{ margin:0; font-size: 30px; letter-spacing: .2px; }
-    .headline p{ margin: 8px 0 0; color: var(--muted); line-height:1.5; }
-
-    .pillrow{ display:flex; flex-wrap:wrap; gap:10px; margin-top: 14px; }
-    .pill{
-      font-size: 13px;
-      padding: 7px 10px;
-      border-radius: 999px;
-      border: 1px solid var(--line);
-      background: rgba(255,255,255,.04);
-      color: var(--text);
-    }
-    .pill.good{ border-color: rgba(34,197,94,.35); background: rgba(34,197,94,.10); }
-    .pill.warn{ border-color: rgba(245,158,11,.35); background: rgba(245,158,11,.10); }
-    .pill.mono{ font-family: var(--mono); color: rgba(255,255,255,.82); }
-
-    h2{
-      margin: 0 0 12px;
-      font-size: 18px;
-      letter-spacing:.2px;
-    }
-    h3{
-      margin: 14px 0 10px;
-      font-size: 15px;
-      color: rgba(255,255,255,.88);
-    }
-
-    .muted{ color: var(--muted); }
-    .divider{ height:1px; background: var(--line); margin: 14px 0; }
-    .section{ padding-top: 10px; }
-
-    .kvs{
-      display:grid;
-      grid-template-columns: 120px 1fr;
-      gap: 10px 12px;
-      align-items:start;
-    }
-    .kvs b{ color: rgba(255,255,255,.85); font-weight:600; }
-    .kvs div{ color: rgba(255,255,255,.86); }
-
-    .list{
-      margin: 0;
-      padding-left: 18px;
-      color: rgba(255,255,255,.86);
-      line-height:1.6;
-    }
-    .list li{ margin: 6px 0; }
-
-    .callout{
-      background: rgba(255,255,255,.04);
-      border: 1px solid var(--line);
-      border-radius: 16px;
-      padding: 14px;
-    }
-    .tag{
-      display:inline-block;
-      font-size: 12px;
-      padding: 3px 8px;
-      border-radius: 999px;
-      border: 1px solid var(--line);
-      color: var(--muted);
-      margin-left: 8px;
-    }
-
-    /* tables */
-    .tablewrap{ overflow:auto; border-radius: 14px; border: 1px solid var(--line); }
-    table{
-      width:100%;
-      border-collapse: collapse;
-      background: rgba(255,255,255,.03);
-      min-width: 760px;
-    }
-    th, td{
-      padding: 10px 12px;
-      border-bottom: 1px solid rgba(255,255,255,.10);
-      vertical-align: top;
-      text-align:left;
-      font-size: 13px;
-      line-height:1.45;
-    }
-    th{ color: rgba(255,255,255,.86); font-weight:700; background: rgba(255,255,255,.04); }
-    td{ color: rgba(255,255,255,.84); }
-    tr:hover td{ background: rgba(255,255,255,.03); }
-
-    .footer{
-      margin-top: 26px;
-      color: var(--muted);
-      font-size: 13px;
-      text-align:center;
-    }
-    .toplink{ color: var(--muted); font-size: 13px; }
-    .toplink:hover{ color: var(--text); }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <header class="nav" id="top">
+  <header class="nav">
     <div class="nav-inner">
-      <div class="brand">
+      <a href="index.html" class="brand">
         <div class="mark" aria-hidden="true"></div>
         <div>
-          <b>Ayas Kanta Swain</b>
+          <b>Dr. Ayas Kanta Swain</b>
           <small>Assistant Professor Grade‑I · ECE · NIT Rourkela</small>
         </div>
-      </div>
+      </a>
 
       <nav class="menu" aria-label="Primary">
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#projects">Projects</a>
-        <a href="#activities">Activities</a>
-        <a href="#teaching">Teaching</a>
-        <a href="#students">Students</a>
-        <a href="#publications">Publications</a>
-        <a class="btn" href="mailto:swaina@nitrkl.ac.in">Contact</a>
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="research.html">Research</a>
+        <a href="projects.html">Projects</a>
+        <a href="activities.html">Activities</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="students.html">Students</a>
+        <a href="publications.html">Publications</a>
+        <a href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
@@ -247,11 +38,11 @@
     <!-- HERO -->
     <section class="card">
       <div class="headline">
-        <h1>Ayas Kanta Swain</h1>
+        <h1>Dr. Ayas Kanta Swain</h1>
         <p>
           Assistant Professor Grade‑I, Department of Electronics and Communication Engineering,
           National Institute of Technology Rourkela
-          <span class="tag"><a href="https://www.nitrkl.ac.in/EC/~swaina/" target="_blank" rel="noreferrer">NITR faculty page</a></span>
+          <span class="tag"><a href="https://www.nitrkl.ac.in/EC/~swaina/" target="_blank" rel="noreferrer">Official NITR Page</a></span>
         </p>
 
         <div class="pillrow">
@@ -270,490 +61,66 @@
 
       <div class="pad">
         <div class="callout">
-          <b>Prospective Students</b>
+          <b>Welcome to My Academic Profile</b>
           <div class="muted" style="line-height:1.7">
-            Interested in <b>SoC/FPGA/ASIC design</b>, <b>Industrial IoT</b>, <b>hardware security</b>, <b>cryptography</b>,
-            or <b>trusted embedded platforms</b>? Please email your CV and a short research statement.
+            This website provides comprehensive information about my research, teaching, projects, 
+            publications, and academic activities at NIT Rourkela. Navigate through the sections 
+            using the menu above to explore specific areas.
+          </div>
+        </div>
+
+        <div class="grid" style="margin-top: 20px;">
+          <div class="card">
+            <div class="pad">
+              <h2>Quick Links</h2>
+              <ul class="list">
+                <li><a href="about.html">📄 Complete Bio & Education</a></li>
+                <li><a href="research.html">🔬 Research Interests & Labs</a></li>
+                <li><a href="projects.html">💰 Sponsored Projects</a></li>
+                <li><a href="teaching.html">📚 Courses Taught</a></li>
+                <li><a href="students.html">👨‍🎓 Research Supervision</a></li>
+                <li><a href="publications.html">📖 Publications</a></li>
+                <li><a href="activities.html">🎯 Workshops & Conferences</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="pad">
+              <h2>Latest Updates</h2>
+              <ul class="list">
+                <li><b>2025:</b> Co‑Investigator in MeitY project on SoC for Industry 4.0</li>
+                <li><b>2025:</b> Coordinator for FPGA to ASIC Workshop</li>
+                <li><b>2024:</b> 7 Ph.D. students currently supervised</li>
+                <li><b>2024:</b> Multiple publications in IEEE conferences</li>
+                <li><b>2023:</b> Completed Ph.D. from NIT Rourkela</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="callout" style="margin-top: 20px;">
+          <b>Prospective Students & Collaborators</b>
+          <div class="muted" style="line-height:1.7">
+            Interested in <b>SoC/FPGA/ASIC design</b>, <b>Industrial IoT</b>, <b>hardware security</b>, 
+            <b>cryptography</b>, or <b>trusted embedded platforms</b>? Please email your CV and a 
+            short research statement to <a href="mailto:swaina@nitrkl.ac.in">swaina@nitrkl.ac.in</a>
           </div>
         </div>
 
         <p class="muted" style="margin-top:14px">
-          Base profile information derived from the official NIT Rourkela faculty page. [Source](https://www.nitrkl.ac.in/EC/~swaina/)
+          Base profile information derived from the official NIT Rourkela faculty page. 
+          <a href="https://www.nitrkl.ac.in/EC/~swaina/" target="_blank">[Source]</a>
         </p>
       </div>
     </section>
 
-    <div class="grid">
-      <!-- LEFT COLUMN -->
-      <div class="card">
-        <div class="pad">
-          <!-- ABOUT -->
-          <section id="about" class="section">
-            <h2>About [Ayas Kanta Swain](https://www.nitrkl.ac.in/EC/~swaina/) <a class="toplink" href="#top">↑</a></h2>
-            <div class="kvs">
-              <b>Designation</b><div>Assistant Professor Grade‑I</div>
-              <b>Department</b><div>Electronics and Communication Engineering</div>
-              <b>Institute</b><div>National Institute of Technology Rourkela</div>
-              <b>Office</b><div>Room EC‑112</div>
-              <b>Email</b><div><a href="mailto:swaina@nitrkl.ac.in">swaina@nitrkl.ac.in</a></div>
-              <b>Phone</b><div>0661‑246‑2458</div>
-            </div>
-
-            <div class="divider"></div>
-
-            <h2>Education <a class="toplink" href="#top">↑</a></h2>
-            <ul class="list">
-              <li><b>Ph.D. (2023)</b> — VLSI Design and Secure Architecture for Embedded System, NIT Rourkela</li>
-              <li><b>M.Tech (Research) (2009)</b> — VLSI Design and Embedded System, NIT Rourkela</li>
-              <li><b>B.E (2001)</b> — Electrical Engineering, IGIT Sarang (Utkal University)</li>
-            </ul>
-            <p class="muted">Details align with the NITR faculty page. [Source](https://www.nitrkl.ac.in/EC/~swaina/)</p>
-          </section>
-
-          <div class="divider"></div>
-
-          <!-- RESEARCH -->
-          <section id="research" class="section">
-            <h2>Research Interests <a class="toplink" href="#top">↑</a></h2>
-            <ul class="list">
-              <li>VLSI Design; FPGA‑to‑ASIC implementation</li>
-              <li>Secure Embedded System Architecture; Trusted Platform Modules (TPM) for IoT gateways</li>
-              <li>Industrial IoT / Industry 4.0: functional safety & security</li>
-              <li>Hardware Security: secure supply chain, anti‑counterfeiting, Trojan resilience, secure test</li>
-              <li>Cryptography & Lightweight Cryptography: authenticated encryption, post‑quantum hardware primitives</li>
-              <li>Image encryption and secure data transmission for edge/IoT applications</li>
-            </ul>
-
-            <h3>Laboratory / Academic Support</h3>
-            <ul class="list">
-              <li>Embedded System Design Lab (CAD tools maintenance and student support)</li>
-              <li>VLSI Design Lab (CAD tools maintenance and student support)</li>
-            </ul>
-            <p class="muted">Labs referenced from NITR page summary. [Source](https://www.nitrkl.ac.in/EC/~swaina/)</p>
-          </section>
-
-          <div class="divider"></div>
-
-          <!-- PROJECTS -->
-          <section id="projects" class="section">
-            <h2>Sponsored Projects <a class="toplink" href="#top">↑</a></h2>
-            <div class="tablewrap" role="region" aria-label="Sponsored projects table">
-              <table>
-                <thead>
-                  <tr>
-                    <th style="width:40%">Project</th>
-                    <th>Agency</th>
-                    <th>Role</th>
-                    <th>Duration (Months)</th>
-                    <th>Status</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><b>Design and Development System on Chip based next Generation IoT System for Industry 4.0 with Functional Safety and Security Features</b></td>
-                    <td>MeitY</td>
-                    <td>Co‑Investigator</td>
-                    <td>60</td>
-                    <td><span class="pill warn">Running</span></td>
-                  </tr>
-                  <tr>
-                    <td><b>Special Manpower Development programme for chips to system design</b></td>
-                    <td>DeitY</td>
-                    <td>Co‑Investigator</td>
-                    <td>60</td>
-                    <td><span class="pill">Completed</span></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <p class="muted" style="margin-top:10px">
-              (Add official project webpage links here if available.) Base project titles appear on the NITR page. [Source](https://www.nitrkl.ac.in/EC/~swaina/)
-            </p>
-          </section>
-
-          <div class="divider"></div>
-
-          <!-- ACTIVITIES / EVENTS -->
-          <section id="activities" class="section">
-            <h2>Workshops / Short‑term Courses / Conferences <a class="toplink" href="#top">↑</a></h2>
-            <div class="tablewrap" role="region" aria-label="Professional activities table">
-              <table>
-                <thead>
-                  <tr>
-                    <th style="width:40%">Event / Program</th>
-                    <th>Type</th>
-                    <th>Role</th>
-                    <th>Dates</th>
-                    <th>Brochure</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><b>FPGA to ASIC – A Complete VLSI Design Flow (Part 2: Static Time Analysis and Amplifier Design)</b></td>
-                    <td>Workshop (ECE)</td>
-                    <td>Coordinator</td>
-                    <td>30 Jan 2026 – 03 Feb 2026</td>
-                    <td><a href="#" title="Paste brochure link">Brochure</a></td>
-                  </tr>
-                  <tr>
-                    <td><b>Future Intelligent Network Toward 6G: 5G and beyond with Reconfigurable SDR and Machine Learning</b> <span class="tag">App No: 1748788379</span></td>
-                    <td>Short‑term Course (ECE)</td>
-                    <td>Co‑Coordinator</td>
-                    <td>24 Nov 2025 – 29 Nov 2025</td>
-                    <td><a href="#" title="Paste brochure link">Brochure</a></td>
-                  </tr>
-                  <tr>
-                    <td><b>6th IEEE India Council International Subsections Conference (INDISCON 2025)</b></td>
-                    <td>Conference (ECE)</td>
-                    <td>Coordinator</td>
-                    <td>21 Aug 2025 – 23 Aug 2025</td>
-                    <td><a href="#" title="Paste brochure link">Brochure</a></td>
-                  </tr>
-                  <tr>
-                    <td><b>IoT and Machine Intelligence for Industry 4.0</b></td>
-                    <td>Workshop (ECE)</td>
-                    <td>Coordinator</td>
-                    <td>10 Oct 2023 – 14 Oct 2023</td>
-                    <td><a href="#" title="Paste brochure link">Brochure</a></td>
-                  </tr>
-                  <tr>
-                    <td><b>Professional Development Programme on IoT & Machine Intelligence for Industry 4.0</b></td>
-                    <td>Short‑term Course (ECE)</td>
-                    <td>Coordinator</td>
-                    <td>06 Jun 2022 – 11 Jun 2022</td>
-                    <td><a href="#" title="Paste brochure link">Brochure</a></td>
-                  </tr>
-                  <tr>
-                    <td><b>5th IEEE International Symposium on Smart Electronic Systems (IEEE‑iSES 2019)</b></td>
-                    <td>Conference (ECE)</td>
-                    <td>Co‑Coordinator</td>
-                    <td>16 Dec 2019 – 18 Dec 2019</td>
-                    <td><a href="#" title="Paste brochure link">Brochure</a></td>
-                  </tr>
-                  <tr>
-                    <td><b>Design Verification and Hardware Security</b></td>
-                    <td>Short‑term Course (ECE)</td>
-                    <td>Co‑Coordinator</td>
-                    <td>01 Jul 2019 – 05 Jul 2019</td>
-                    <td><a href="#" title="Paste brochure link">Brochure</a></td>
-                  </tr>
-                  <tr>
-                    <td><b>FPAA Design of Analog Systems</b></td>
-                    <td>Workshop (ECE)</td>
-                    <td>Co‑Coordinator</td>
-                    <td>27 Oct 2017 – 28 Oct 2017</td>
-                    <td><a href="#" title="Paste brochure link">Brochure</a></td>
-                  </tr>
-                  <tr>
-                    <td><b>Workshop on Internet of Things (IoT)</b></td>
-                    <td>Workshop (ECE)</td>
-                    <td>Co‑Coordinator</td>
-                    <td>19 Aug 2017</td>
-                    <td><a href="#" title="Paste brochure link">Brochure</a></td>
-                  </tr>
-                  <tr>
-                    <td><b>VLSI Design & CAD Tools</b></td>
-                    <td>Short‑term Course (ECE)</td>
-                    <td>Co‑Coordinator</td>
-                    <td>18 May 2015 – 12 Jun 2015</td>
-                    <td><a href="#" title="Paste brochure link">Brochure</a></td>
-                  </tr>
-                  <tr>
-                    <td><b>VLSI Design & CAD Tools</b></td>
-                    <td>Short‑term Course (ECE)</td>
-                    <td>Co‑Coordinator</td>
-                    <td>10 Jun 2013 – 02 Jul 2013</td>
-                    <td><a href="#" title="Paste brochure link">Brochure</a></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <h3>Memberships / Fellowships</h3>
-            <ul class="list">
-              <li><b>IEEE Member</b> (2011)</li>
-            </ul>
-          </section>
-        </div>
-      </div>
-
-      <!-- RIGHT COLUMN -->
-      <aside class="card">
-        <div class="pad">
-          <!-- TEACHING -->
-          <section id="teaching" class="section">
-            <h2>Teaching <a class="toplink" href="#top">↑</a></h2>
-
-            <h3>Theory</h3>
-            <ul class="list">
-              <li>EC2010 : Digital System Design</li>
-              <li>EC320 : Embedded Systems</li>
-              <li>EC3210 : Embedded Systems and Applications</li>
-              <li>EC4202 : Embedded Computing System</li>
-              <li>EC6203 : Reconfigurable System Design</li>
-              <li>EC6204 : Embedded Computing Systems</li>
-              <li>EC6209 : IoT and Applications</li>
-              <li>EC623 : HDL and High Level VLSI Design</li>
-              <li>EC623 : Reconfigurable System Design</li>
-              <li>EC624 : Embedded Computing Systems</li>
-            </ul>
-
-            <div class="divider"></div>
-
-            <h3>Practical / Laboratory</h3>
-            <ul class="list">
-              <li>EC370 : Embedded Systems Design Laboratory</li>
-              <li>EC370 : Embedded Systems Laboratory</li>
-              <li>EC3702 : Embedded Systems Design Laboratory</li>
-              <li>EC377 : Electronics Design Laboratory</li>
-              <li>EC4715 : VLSI Design Laboratory</li>
-              <li>EC473 : High Level VLSI Laboratory</li>
-              <li>EC473 : Reconfigurable System Design Laboratory</li>
-              <li>EC475 : VLSI Design Laboratory</li>
-              <li>EC475 : VLSI Laboratory</li>
-              <li>EC6275 : Reconfigurable System Design Laboratory</li>
-              <li>EC675 : HDL VLSI Laboratory</li>
-              <li>EC675 : High Level Design Laboratory</li>
-              <li>EC675 : Reconfigurable System Design Laboratory</li>
-              <li>EC678 : Embedded Computing System Laboratory</li>
-            </ul>
-          </section>
-
-          <div class="divider"></div>
-
-          <!-- STUDENTS -->
-          <section id="students" class="section">
-            <h2>Research Supervision <a class="toplink" href="#top">↑</a></h2>
-
-            <h3>Ph.D. Students (7)</h3>
-            <ul class="list">
-              <li><b>SYSTEM ON CHIP FOR INDUSTRIAL 4.0</b> — Kaustubh Kamalanand Tiple (Enrolled Aug 2024, Continuing) — <i>Co‑Supervisor</i></li>
-              <li><b>Functional Safety and Security in Industrial IoT</b> — Bodasingi Sai Surya Murali Dhar (Enrolled Nov 2024, Continuing) — <i>Supervisor</i></li>
-              <li><b>Design and Development of Trusted Platform Module for securing Industrial IoT Gateway</b> — Pradeep Kumar Mohanty (Enrolled Jan 2025, Continuing) — <i>Supervisor</i></li>
-              <li><b>SoC design for Industrial IoT</b> — Bharat Patidar (Enrolled Sep 2023, Continuing) — <i>Co‑Supervisor</i></li>
-              <li><b>Hardware Development for Air Quality Monitoring</b> — Soumyadip Motilal (Enrolled Jan 2024, Continuing) — <i>Supervisor</i></li>
-              <li><b>Cyber physical system with security features</b> — Lopamudra Samal (Enrolled Aug 2022, Continuing) — <i>Co‑Supervisor</i></li>
-              <li><b>EMBEDDED SYSTEMS, APPLIED ELECTRONICS</b> — Boddula Kalyan Kumar (Enrolled Jan 2023, Continuing) — <i>Co‑Supervisor</i></li>
-            </ul>
-
-            <div class="divider"></div>
-
-            <h3>Executive Ph.D. Students (1)</h3>
-            <ul class="list">
-              <li><b>VLSI</b> — Saurabh Bhaurao Bansod (Enrolled Jul 2025, Continuing) — <i>Co‑Supervisor</i></li>
-            </ul>
-          </section>
-
-          <div class="divider"></div>
-
-          <!-- PUBLICATIONS -->
-          <section id="publications" class="section">
-            <h2>Selected Publications (as provided) <a class="toplink" href="#top">↑</a></h2>
-            <div class="callout">
-              <b>Note</b>
-              <div class="muted" style="line-height:1.7">
-                This table is built from the list you pasted. If you share your Google Scholar URL, I can
-                auto-link each item and format as IEEE/APA.
-              </div>
-            </div>
-
-            <div class="divider"></div>
-
-            <div class="tablewrap" role="region" aria-label="Selected publications table">
-              <table>
-                <thead>
-                  <tr>
-                    <th style="width:58%">Title</th>
-                    <th>Venue / Source</th>
-                    <th style="width:80px">Cited by</th>
-                    <th style="width:70px">Year</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><b>iClean: An Intelligent Industrial IoT Framework for Automatic Sustainable Air Quality Monitoring</b><br/><span class="muted">L Samal, AK Samal, K Mahapatra, AK Swain, SP Mohanty</span></td>
-                    <td>IEEE Transactions on Sustainable Computing</td>
-                    <td class="muted">—</td>
-                    <td>2026</td>
-                  </tr>
-                  <tr>
-                    <td><b>A Security Framework for RISC‑V SoC using Hardware Software Co‑Design</b><br/><span class="muted">B Patidar, K Mahapatra, A Swain, KS Kumar</span></td>
-                    <td>INDISCON 2025, 1–6</td>
-                    <td class="muted">—</td>
-                    <td>2025</td>
-                  </tr>
-                  <tr>
-                    <td><b>Secure Supply Chain and Manufacturing</b><br/><span class="muted">K Sudeendra Kumar, SS Rekha, AK Swain, KK Mahapatra</span></td>
-                    <td>Hardware Security: Challenges and Solutions, 71–99</td>
-                    <td class="muted">—</td>
-                    <td>2025</td>
-                  </tr>
-                  <tr>
-                    <td><b>High‑Efficiency FPGA Implementations of ASCON‑128/128a: A Unified Pipelined Architecture for Authenticated Encryption in Edge Devices</b><br/><span class="muted">PK Mohanty, S Mahapatra, AK Swain, K Mahapatra</span></td>
-                    <td class="muted">—</td>
-                    <td class="muted">—</td>
-                    <td>2025</td>
-                  </tr>
-                  <tr>
-                    <td><b>Hardware Implementation of Optimized Modular Polynomial Multiplication for Post‑Quantum Cryptographic Schemes</b><br/><span class="muted">AK Swain</span></td>
-                    <td class="muted">—</td>
-                    <td class="muted">—</td>
-                    <td>2025</td>
-                  </tr>
-                  <tr>
-                    <td><b>Application of Secure and Energy‑Efficient Data Access Solutions in Industrial IoT for Small‑Scale Industry</b><br/><span class="muted">L Samal, KK Mahapatra, AK Swain</span></td>
-                    <td>IEEE 16th International Conference on Computational Intelligence and …</td>
-                    <td class="muted">—</td>
-                    <td>2024</td>
-                  </tr>
-                  <tr>
-                    <td><b>Advanced IoT‑Based Pollution Monitoring: Harnessing Zephyr RTOS and AWS For Real‑Time Data Management</b><br/><span class="muted">KK Boddula, KK Mahapatra, AK Swain, JP Mohanty</span></td>
-                    <td>INDICON 2024, 1–6</td>
-                    <td>1</td>
-                    <td>2024</td>
-                  </tr>
-                  <tr>
-                    <td><b>Strengthening Industrial IoT Security: Device Fingerprinting and ML‑Based Node Authentication at Gateway</b><br/><span class="muted">L Samal, KK Mahapatra, AK Swain</span></td>
-                    <td>IEEE International Conference on Electronics, Computing and …</td>
-                    <td>1</td>
-                    <td>2024</td>
-                  </tr>
-                  <tr>
-                    <td><b>PACAC: PYNQ Accelerated Cardiac Arrhythmia Classifier with secure transmission — A Deep Learning based Approach</b><br/><span class="muted">S Mangaraj, JP Mohanty, S Ari, AK Swain, K Mahapatra</span></td>
-                    <td>GLSVLSI 2024, 670–675</td>
-                    <td>2</td>
-                    <td>2024</td>
-                  </tr>
-                  <tr>
-                    <td><b>Security‑by‑design for smart electronics</b><br/><span class="muted">VP Yanambaka, AK Swain, SK Ram, S Mohanty</span></td>
-                    <td>GLSVLSI 2024, 669–669</td>
-                    <td>1</td>
-                    <td>2024</td>
-                  </tr>
-                  <tr>
-                    <td><b>Hardware Accelerated Quantized Hand Written Digit Recognition via High Level Synthesis</b><br/><span class="muted">P Oraon, S Mangaraj, AK Swain, K Mahapatra</span></td>
-                    <td>GLSVLSI 2024, 688–693</td>
-                    <td>2</td>
-                    <td>2024</td>
-                  </tr>
-                  <tr>
-                    <td><b>FPGA accelerated convolutional neural network for detection of cardiac arrhythmia</b><br/><span class="muted">S Mangaraj, P Oraon, S Ari, AK Swain, K Mahapatra</span></td>
-                    <td class="muted">—</td>
-                    <td>13</td>
-                    <td>2024</td>
-                  </tr>
-                  <tr>
-                    <td><b>Lightweight secured split test technique with RMA capability to prevent IC counterfeiting</b><br/><span class="muted">S Kumar, SS Rekha, A Koushik, AK Swain, KK Mahapatra</span></td>
-                    <td>IEEE iSES 2023, 191–196</td>
-                    <td>2</td>
-                    <td>2023</td>
-                  </tr>
-                  <tr>
-                    <td><b>Integrated IoT‑Based Air Quality Monitoring and Prediction System: A Hybrid Approach</b><br/><span class="muted">A Samal, L Samal, AK Swain, KK Mahapatra</span></td>
-                    <td>IEEE iSES 2023, 441–444</td>
-                    <td>8</td>
-                    <td>2023</td>
-                  </tr>
-                  <tr>
-                    <td><b>Ultra‑Portable Mini Washing Machine</b><br/><span class="muted">SS Mahapatra, AK Swain, KS Shukla, M Sharma, A Mishra</span></td>
-                    <td>IN Patent 916/KOL/2014</td>
-                    <td class="muted">—</td>
-                    <td>2023</td>
-                  </tr>
-                  <tr>
-                    <td><b>PUF Based Authentication System for IoT Nodes: A Comparative Study</b><br/><span class="muted">M Mishra, S Kumar, AK Swain, KK Mahapatra</span></td>
-                    <td>IEEE iSES 2022, 390–393</td>
-                    <td class="muted">—</td>
-                    <td>2022</td>
-                  </tr>
-                  <tr>
-                    <td><b>Differential metric based deep learning methodology for non‑profiled Side Channel Analysis</b><br/><span class="muted">G Vijayakanthi, JP Mohanty, AK Swain, K Mahapatra</span></td>
-                    <td>IEEE iSES 2021, 200–203</td>
-                    <td>4</td>
-                    <td>2021</td>
-                  </tr>
-                  <tr>
-                    <td><b>Fortified‑NoC: A robust approach for trojan‑resilient network‑on‑chips to fortify multicore‑based consumer electronics</b><br/><span class="muted">JYVM Kumar, AK Swain, K Mahapatra</span></td>
-                    <td>IEEE Transactions on Consumer Electronics 68(1), 57–68</td>
-                    <td>23</td>
-                    <td>2021</td>
-                  </tr>
-                  <tr>
-                    <td><b>A solar based power module for battery‑less IoT sensors towards sustainable smart cities</b><br/><span class="muted">SK Ram, S Chourasia, BB Das, AK Swain, K Mahapatra, S Mohanty</span></td>
-                    <td>IEEE ISVLSI 2020, 458–463</td>
-                    <td>18</td>
-                    <td>2020</td>
-                  </tr>
-                  <tr>
-                    <td><b>Network on Chip for Consumer Electronics Devices: Architectural and performance exploration of synchronous and asynchronous NoC‑based systems</b><br/><span class="muted">AK Swain, AK Rajput, KK Mahapatra</span></td>
-                    <td>IEEE Consumer Electronics Magazine 8(3), 50–54</td>
-                    <td>9</td>
-                    <td>2019</td>
-                  </tr>
-                  <tr>
-                    <td><b>Run time mitigation of performance degradation hardware trojan attacks in network on chip</b><br/><span class="muted">MK Jyv, AK Swain, S Kumar, SR Sahoo, K Mahapatra</span></td>
-                    <td>IEEE ISVLSI 2018, 738–743</td>
-                    <td>55</td>
-                    <td>2018</td>
-                  </tr>
-                  <tr>
-                    <td><b>PUF‑based secure test wrapper for SoC testing</b><br/><span class="muted">S Kumar, S Seth, S Sahoo, A Mahapatra, AK Swain, K Mahapatra</span></td>
-                    <td>IEEE ISVLSI 2018, 672–677</td>
-                    <td>6</td>
-                    <td>2018</td>
-                  </tr>
-                  <tr>
-                    <td><b>Security enhancements to system on chip devices for IoT perception layer</b><br/><span class="muted">S Kumar, S Sahoo, A Mahapatra, AK Swain, KK Mahapatra</span></td>
-                    <td>IEEE NICS 2017 …</td>
-                    <td>80</td>
-                    <td>2017</td>
-                  </tr>
-                  <tr>
-                    <td><b>On‑chip ro‑sensor for recycled IC detection</b><br/><span class="muted">SR Sahoo, K Sudeendra, A Mahapatra, AK Swain, KK Mahapatra</span></td>
-                    <td>IEEE NICS 2017 …</td>
-                    <td>7</td>
-                    <td>2017</td>
-                  </tr>
-                  <tr>
-                    <td><b>Performance evalulation of different routing algorithms in Network on Chip</b><br/><span class="muted">JK Singh, AK Swain, TNK Reddy, KK Mahapatra</span></td>
-                    <td>IEEE Asia Pacific Conf. on Postgraduate Research …</td>
-                    <td>49</td>
-                    <td>2013</td>
-                  </tr>
-                  <tr>
-                    <td><b>Design and analysis of five port router for network on chip</b><br/><span class="muted">S Swapna, AK Swain, KK Mahapatra</span></td>
-                    <td>APC on Postgraduate Research in Microelectronics …</td>
-                    <td>32</td>
-                    <td>2012</td>
-                  </tr>
-                  <tr>
-                    <td><b>Design and verification of WISHBONE bus interface for System‑on‑Chip integration</b><br/><span class="muted">AK Swain, KK Mahapatra</span></td>
-                    <td>IEEE INDICON 2010, 1–4</td>
-                    <td>23</td>
-                    <td>2010</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <p class="muted" style="margin-top:10px">
-              If you want, I can: (1) split into “Journals / Conferences / Book chapters / Patents”,
-              and (2) add DOI links once you provide Scholar/Scopus/DBLP URLs.
-            </p>
-          </section>
-        </div>
-      </aside>
-    </div>
-
     <p class="footer">
-      © <span id="y"></span> Ayas Kanta Swain · Static site for GitHub Pages (share via git.io short link).<br/>
+      © <span id="y"></span> Dr. Ayas Kanta Swain · Department of ECE · NIT Rourkela<br/>
       Base profile source: <a href="https://www.nitrkl.ac.in/EC/~swaina/" target="_blank" rel="noreferrer">https://www.nitrkl.ac.in/EC/~swaina/</a>
     </p>
   </main>
 
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
