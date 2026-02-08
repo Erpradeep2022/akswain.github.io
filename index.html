@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ayas Kanta Swain | Assistant Professor | NIT Rourkela</title>
+  <meta name="description" content="Faculty homepage of Ayas Kanta Swain, Assistant Professor Grade-I, Department of Electronics and Communication Engineering, NIT Rourkela." />
+  <meta name="theme-color" content="#0b3d91" />
+
+  <!-- Open Graph (nice preview when sharing links) -->
+  <meta property="og:title" content="Ayas Kanta Swain | Assistant Professor | NIT Rourkela" />
+  <meta property="og:description" content="VLSI Design, Secure Embedded Systems, Industrial IoT — Teaching, research, projects, publications." />
+  <meta property="og:type" content="website" />
+
+  <!-- Simple, clean styling (no build tools) -->
+  <style>
+    :root{
+      --bg: #0b1220;
+      --card: rgba(255,255,255,.06);
+      --card2: rgba(255,255,255,.09);
+      --text: rgba(255,255,255,.92);
+      --muted: rgba(255,255,255,.68);
+      --line: rgba(255,255,255,.12);
+      --brand: #63b3ff;
+      --brand2:#8b5cf6;
+      --good:#22c55e;
+      --shadow: 0 12px 40px rgba(0,0,0,.45);
+      --radius: 18px;
+      --max: 1100px;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+    }
+    *{ box-sizing:border-box; }
+    html{ scroll-behavior:smooth; }
+    body{
+      margin:0;
+      font-family: var(--sans);
+      color: var(--text);
+      background:
+        radial-gradient(1000px 600px at 10% 0%, rgba(99,179,255,.18), transparent 60%),
+        radial-gradient(900px 600px at 90% 20%, rgba(139,92,246,.18), transparent 55%),
+        radial-gradient(900px 700px at 50% 100%, rgba(34,197,94,.10), transparent 60%),
+        var(--bg);
+    }
+    a{ color: var(--brand); text-decoration:none; }
+    a:hover{ text-decoration:underline; }
+
+    /* Top nav */
+    .nav{
+      position: sticky;
+      top:0;
+      z-index: 50;
+      backdrop-filter: blur(12px);
+      background: rgba(11,18,32,.62);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav-inner{
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 12px 16px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap: 14px;
+    }
+    .brand{
+      display:flex; align-items:center; gap:10px;
+      min-width: 220px;
+    }
+    .mark{
+      width: 36px; height: 36px; border-radius: 12px;
+      background: linear-gradient(135deg, rgba(99,179,255,.95), rgba(139,92,246,.95));
+      box-shadow: 0 10px 30px rgba(99,179,255,.25);
+    }
+    .brand b{ display:block; line-height:1.1; }
+    .brand small{ color:var(--muted); display:block; margin-top:2px; }
+
+    .nav a.btn{
+      display:inline-flex; align-items:center; gap:8px;
+      padding: 9px 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255,255,255,.04);
+      text-decoration:none;
+      color: var(--text);
+      white-space:nowrap;
+    }
+    .nav a.btn:hover{ background: rgba(255,255,255,.07); }
+
+    .menu{
+      display:flex; flex-wrap:wrap; gap: 8px;
+      justify-content:flex-end;
+    }
+    .menu a{
+      color: var(--muted);
+      padding: 8px 10px;
+      border-radius: 10px;
+      border: 1px solid transparent;
+      text-decoration:none;
+    }
+    .menu a:hover{
+      color: var(--text);
+      border-color: var(--line);
+      background: rgba(255,255,255,.04);
+    }
+
+    /* Layout */
+    .wrap{ max-width: var(--max); margin: 0 auto; padding: 22px 16px 70px; }
+    .grid{
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 18px;
+      margin-top: 18px;
+    }
+    @media (max-width: 920px){
+      .grid{ grid-template-columns: 1fr; }
+      .brand{ min-width: unset; }
+    }
+
+    .card{
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .card .pad{ padding: 18px; }
+    .headline{
+      padding: 22px 18px;
+      border-bottom: 1px solid var(--line);
+      background: linear-gradient(135deg, rgba(99,179,255,.10), rgba(139,92,246,.08));
+    }
+    .headline h1{ margin:0; font-size: 30px; letter-spacing: .2px; }
+    .headline p{ margin: 8px 0 0; color: var(--muted); line-height:1.5; }
+
+    .pillrow{ display:flex; flex-wrap:wrap; gap:10px; margin-top: 14px; }
+    .pill{
+      font-size: 13px;
+      padding: 7px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      color: var(--text);
+    }
+    .pill.good{ border-color: rgba(34,197,94,.35); background: rgba(34,197,94,.10); }
+    .pill.mono{ font-family: var(--mono); color: rgba(255,255,255,.82); }
+
+    h2{
+      margin: 0 0 12px;
+      font-size: 18px;
+      letter-spacing:.2px;
+    }
+    .muted{ color: var(--muted); }
+    .kvs{
+      display:grid;
+      grid-template-columns: 120px 1fr;
+      gap: 10px 12px;
+      align-items:start;
+    }
+    .kvs b{ color: rgba(255,255,255,.85); font-weight:600; }
+    .kvs div{ color: rgba(255,255,255,.86); }
+
+    .section{ padding-top: 10px; }
+    .divider{ height:1px; background: var(--line); margin: 14px 0; }
+
+    .list{
+      margin: 0;
+      padding-left: 18px;
+      color: rgba(255,255,255,.86);
+      line-height:1.6;
+    }
+    .list li{ margin: 6px 0; }
+    .two-col{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    @media (max-width: 640px){
+      .two-col{ grid-template-columns: 1fr; }
+    }
+
+    .callouts{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+    .callout{
+      background: rgba(255,255,255,.04);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 14px;
+    }
+    .callout b{ display:block; margin-bottom: 6px; }
+    .tag{
+      display:inline-block;
+      font-size: 12px;
+      padding: 3px 8px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      color: var(--muted);
+      margin-left: 8px;
+    }
+
+    .footer{
+      margin-top: 26px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align:center;
+    }
+    .toplink{ color: var(--muted); font-size: 13px; }
+    .toplink:hover{ color: var(--text); }
+  </style>
+</head>
+
+<body>
+  <header class="nav" id="top">
+    <div class="nav-inner">
+      <div class="brand">
+        <div class="mark" aria-hidden="true"></div>
+        <div>
+          <b>Ayas Kanta Swain</b>
+          <small>Assistant Professor Grade‑I · ECE · NIT Rourkela</small>
+        </div>
+      </div>
+
+      <nav class="menu" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#students">Students</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#activities">Activities</a>
+        <a class="btn" href="mailto:swaina@nitrkl.ac.in" title="Email">
+          Contact
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- HERO -->
+    <section class="card">
+      <div class="headline">
+        <h1>Ayas Kanta Swain</h1>
+        <p>
+          Assistant Professor Grade‑I, Department of Electronics and Communication Engineering,
+          National Institute of Technology Rourkela
+          <span class="tag"><a href="https://www.nitrkl.ac.in/EC/~swaina/" target="_blank" rel="noreferrer">Original profile</a></span>
+        </p>
+
+        <div class="pillrow">
+          <span class="pill good">VLSI Design</span>
+          <span class="pill good">Secure Embedded Systems</span>
+          <span class="pill good">Industrial IoT</span>
+          <span class="pill mono">Room: EC‑112</span>
+          <span class="pill mono">Phone: 0661‑246‑2458</span>
+          <span class="pill mono">Email: swaina@nitrkl.ac.in</span>
+        </div>
+      </div>
+
+      <div class="pad">
+        <div class="two-col">
+          <div class="callout">
+            <b>Quick Links</b>
+            <div class="muted" style="line-height:1.7">
+              • NITR Faculty Page: <a href="https://www.nitrkl.ac.in/EC/~swaina/" target="_blank" rel="noreferrer">nitrkl.ac.in/EC/~swaina</a><br/>
+              • Email: <a href="mailto:swaina@nitrkl.ac.in">swaina@nitrkl.ac.in</a><br/>
+              • (Optional) Google Scholar / ORCID / Scopus: <span class="muted">add your links here</span>
+            </div>
+          </div>
+
+          <div class="callout">
+            <b>Prospective Students</b>
+            <div class="muted" style="line-height:1.7">
+              If you are interested in <b>VLSI/Embedded Systems/IoT</b> research or projects, email your CV
+              and a short description of your interests.
+            </div>
+          </div>
+        </div>
+
+        <p class="muted" style="margin-top:14px">
+          Profile details and academic items below are compiled from the NIT Rourkela faculty page. [Source]
+          (<a href="https://www.nitrkl.ac.in/EC/~swaina/" target="_blank" rel="noreferrer">https://www.nitrkl.ac.in/EC/~swaina/</a>)
+        </p>
+      </div>
+    </section>
+
+    <div class="grid">
+      <!-- LEFT COLUMN -->
+      <div class="card">
+        <div class="pad">
+          <section id="about" class="section">
+            <h2>About <a class="toplink" href="#top">↑</a></h2>
+            <div class="kvs">
+              <b>Designation</b><div>Assistant Professor Grade‑I</div>
+              <b>Department</b><div>Electronics and Communication Engineering</div>
+              <b>Institute</b><div>National Institute of Technology Rourkela</div>
+              <b>Office</b><div>Room EC‑112</div>
+              <b>Email</b><div><a href="mailto:swaina@nitrkl.ac.in">swaina@nitrkl.ac.in</a></div>
+              <b>Phone</b><div>0661‑246‑2458</div>
+            </div>
+            <div class="divider"></div>
+
+            <h2 id="education">Education <a class="toplink" href="#top">↑</a></h2>
+            <ul class="list">
+              <li><b>Ph.D. (2023)</b> — VLSI Design and Secure Architecture for Embedded System, NIT Rourkela</li>
+              <li><b>M.Tech (Research) (2009)</b> — VLSI Design and Embedded System, NIT Rourkela</li>
+              <li><b>B.E (2001)</b> — Electrical Engineering, IGIT Sarang (Utkal University)</li>
+            </ul>
+          </section>
+
+          <div class="divider"></div>
+
+          <section id="research" class="section">
+            <h2>Research Interests <a class="toplink" href="#top">↑</a></h2>
+            <ul class="list">
+              <li>VLSI Design</li>
+              <li>Secure Embedded System Architecture</li>
+              <li>Industrial IoT</li>
+            </ul>
+
+            <div class="divider"></div>
+
+            <h2 id="labs">Laboratory / Academic Support <a class="toplink" href="#top">↑</a></h2>
+            <ul class="list">
+              <li>Embedded System Design Lab (CAD tools maintenance and student support)</li>
+              <li>VLSI Design Lab (CAD tools maintenance and student support)</li>
+            </ul>
+          </section>
+
+          <div class="divider"></div>
+
+          <section id="projects" class="section">
+            <h2>Sponsored Projects <a class="toplink" href="#top">↑</a></h2>
+            <ul class="list">
+              <li>
+                <b>Design and Development System on Chip based next Generation IoT System for Industry 4.0 with Functional Safety and Security Features</b>
+                — MeitY — <i>Co‑Investigator</i> (Running)
+              </li>
+              <li>
+                <b>Special Manpower Development programme for chips to system design</b>
+                — DeitY — <i>Co‑Investigator</i> (Completed)
+              </li>
+            </ul>
+          </section>
+
+          <div class="divider"></div>
+
+          <section id="publications" class="section">
+            <h2>Publications <a class="toplink" href="#top">↑</a></h2>
+            <div class="callout">
+              <b>Note</b>
+              <div class="muted">
+                Your NITR page indicates a publication list (total reported: 13). Add full citations (APA/IEEE),
+                DOI links, and PDFs (if allowed) here for maximum impact.
+              </div>
+            </div>
+
+            <!-- Replace these placeholders with your exact publication entries -->
+            <ul class="list">
+              <li><b>Selected areas:</b> PYNQ accelerated classification; Solar based power modules for IoT sensors (add full citation details).</li>
+              <li><b>Total publications:</b> 13 (as listed on the faculty page).</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <aside class="card">
+        <div class="pad">
+          <section id="teaching" class="section">
+            <h2>Teaching <a class="toplink" href="#top">↑</a></h2>
+
+            <div class="callouts">
+              <div class="callout">
+                <b>Theory Courses</b>
+                <ul class="list">
+                  <li>EC2010 Digital System Design</li>
+                  <li>EC320 Embedded Systems</li>
+                  <li>EC3210 Embedded Systems and Applications</li>
+                  <li>EC4202 Embedded Computing System</li>
+                  <li>EC6203 Reconfigurable System Design</li>
+                  <li>EC6204 Embedded Computing Systems</li>
+                  <li>EC6209 IoT and Applications</li>
+                  <li>EC623 HDL and High Level VLSI Design</li>
+                </ul>
+              </div>
+
+              <div class="callout">
+                <b>Laboratory / Practical</b>
+                <ul class="list">
+                  <li>EC370 Embedded Systems Design Lab</li>
+                  <li>EC377 Electronics Design Lab</li>
+                  <li>EC4715 VLSI Design Lab</li>
+                  <li>EC473 Reconfigurable System Design Lab</li>
+                  <li>EC6275 Reconfigurable System Design Lab</li>
+                  <li>EC678 Embedded Computing System Lab</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <div class="divider"></div>
+
+          <section id="students" class="section">
+            <h2>Ph.D. Scholars <a class="toplink" href="#top">↑</a></h2>
+            <ul class="list">
+              <li>Kaustubh Kamalanand Tiple (Aug 2024 – Continuing)</li>
+              <li>Bodasingi Sai Surya Murali Dhar (Nov 2024 – Continuing)</li>
+              <li>Pradeep Kumar Mohanty (Jan 2025 – Continuing)</li>
+              <li>Bharat Patidar (Sep 2023 – Continuing)</li>
+              <li>Soumyadip Motilal (Jan 2024 – Continuing)</li>
+              <li>Lopamudra Samal (Aug 2022 – Continuing)</li>
+              <li>Boddula Kalyan Kumar (Jan 2023 – Continuing)</li>
+              <li>Saurabh Bhaurao Bansod — Executive Ph.D. (Jul 2025 – Continuing)</li>
+            </ul>
+          </section>
+
+          <div class="divider"></div>
+
+          <section id="activities" class="section">
+            <h2>Professional Activities <a class="toplink" href="#top">↑</a></h2>
+            <ul class="list">
+              <li>Coordinator roles for workshops/conferences including INDISCON 2025 and IEEE‑iSES 2019 (as listed on the faculty page)</li>
+              <li>Workshops on IoT, VLSI Design, and CAD tools</li>
+              <li><b>IEEE Member</b> (since 2011)</li>
+            </ul>
+          </section>
+
+          <div class="divider"></div>
+
+          <section id="updates" class="section">
+            <h2>News & Updates <a class="toplink" href="#top">↑</a></h2>
+            <div class="callout">
+              <b>How to use</b>
+              <div class="muted">
+                Add 3–5 short bullet updates (new papers, calls for students, project milestones).
+                Keep it current—this section improves credibility.
+              </div>
+              <ul class="list">
+                <li><span class="muted">(Example)</span> Open positions for B.Tech/M.Tech projects in Embedded/IoT.</li>
+                <li><span class="muted">(Example)</span> New course material uploaded for EC6209.</li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </aside>
+    </div>
+
+    <p class="footer">
+      © <span id="y"></span> Ayas Kanta Swain · Built as a single static page for GitHub Pages (share via git.io short link).<br/>
+      Profile source: <a href="https://www.nitrkl.ac.in/EC/~swaina/" target="_blank" rel="noreferrer">NIT Rourkela faculty page</a>.
+    </p>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
